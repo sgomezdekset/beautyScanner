@@ -25,6 +25,9 @@ class MerchantsController < ApplicationController
   def map
   end
 
+  def indiv_map
+  end
+
   # POST /merchants
   # POST /merchants.json
   def create

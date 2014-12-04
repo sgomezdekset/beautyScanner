@@ -33,3 +33,4 @@ $ ->
     url: '/merchants.json'
   .done (data) ->
     convert data
+
