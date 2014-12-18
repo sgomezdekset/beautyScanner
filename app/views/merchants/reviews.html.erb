@@ -5,7 +5,7 @@
       <tr class="<%= cycle('oddrow', 'evenrow') -%>">
         <td>
           <% if review.score != nil%>
-            <%= review.score.to_i.times do %>
+            <% review.score.to_i.times do %>
               <span class="glyphicon glyphicon-star"
               ></span>
             <% end %>

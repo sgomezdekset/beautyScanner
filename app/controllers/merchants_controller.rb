@@ -1,6 +1,6 @@
 class MerchantsController < ApplicationController
   before_action :set_merchant, only: [:show, :edit, :update, :destroy, :map, :reviews, :update_review]
-
+  before_action :authenticate_user!, only: [:reviews]
   # GET /search
   def search
     @selected_category_id = params[:category]
