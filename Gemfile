@@ -11,6 +11,9 @@ gem 'pg'
 gem "activerecord-postgresql-adapter"
 gem 'taps'
 
+#deploy on Heroku
+gem 'rails_12factor'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
