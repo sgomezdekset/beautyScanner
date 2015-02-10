@@ -6,7 +6,6 @@ group :production, :staging do
   gem 'taps'
 end
 
-gem 'pg'
 
 # Set up the basic calendar feature
 gem 'fullcalendar-rails'
@@ -14,6 +13,17 @@ gem 'momentjs-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
+
+# Use sqlite3 as the database for Active Record
+#gem 'sqlite3'
+
+#Use Postgress as the database
+gem 'pg'
+gem "activerecord-postgresql-adapter"
+gem 'taps'
+
+#deploy on Heroku
+gem 'rails_12factor'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
@@ -23,7 +33,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
-gem 'rails_12factor'
+
 
 # Show Google Maps in rails application
 gem 'gmaps4rails'
@@ -46,6 +56,8 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
+
+ruby '2.0.0'
 
 group :development do
   # Spring speeds up development by keeping your application running in the background.
